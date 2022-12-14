@@ -120,9 +120,10 @@ location.href = "/";
 </div>
 </div>
 <article id="article">
-<h1><?= ('This is the alternative UI. Don\'t know what that means? You should probably ')?><a href="https://urusai.social">start here</a></h1>
-<h2><?=_('What is Urusai! Social?')?></h2>
-<p><?=_('We are a community built around our shared love of anime, manga, gaming, and other otaku culture. Urusai is a place where everyone can feel comfortable engaging with others, whether that\'s about their favorite show, book, game, or anything else that excites them, even if it\'s not typical otaku fare!')?></p>
+<h2><?= ('This is the alternative UI.')?></h2>
+<p><?= ('Don\'t know what that means? You should probably ')?><a href="https://urusai.social">start here</a></p>
+<h2><?= ('What is Urusai! Social?')?></h2>
+<p><?= ('We are a community built around our shared love of anime, manga, gaming, and other otaku culture. Urusai is a place where everyone can feel comfortable engaging with others, whether that\'s about their favorite show, book, game, or anything else that excites them, even if it\'s not typical otaku fare!')?></p>
 <p><?= ('This server runs a modified version of the')?><a href="https://github.com/glitch-soc/mastodon"> glitch-soc </a><?=_('version of ')?><a href="https://joinmastodon.org"> Mastodon </a></p>
 <p><?=_('We have a strict')?><a href="https://rules.urusai.social/mastodon-coc.html"> Code of Conduct </a><?= ('that details our strong stance against hate and predatory behavior. In short: zero-tolerance for hatred, bigotry, harassment, science or history denialism, lolicon/paedophilia, exploitation, etc.')?></p>
 <p><?= ('To learn more about our rules, see the')?><a href="https://urusai.social/about"> About </a><?= ('section of the main instance.')?>

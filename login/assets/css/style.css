@@ -222,13 +222,17 @@ height: 220px;
 padding: 36px 24px;
 margin: auto;
 overflow: hidden;
-background: inherit;
+background: rgba(0,0,0,0.15);
 box-sizing: border-box;
 border-radius: 4px;
 border: 1px solid #C9EFF8;
 text-align: center;
 box-shadow: 0px 5px 5px rgba(0,0,0,0.26);
 transition: 0.25s ease-out;
+}
+#main #login_form_wrap .login_form ::placeholder {
+color:white;
+opacity: 0.3;
 }
 #main #login_form_wrap .login_form.expand {
 width: 780px;
