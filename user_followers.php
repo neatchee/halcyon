@@ -27,7 +27,6 @@
 </div>
 <?php include dirname(__FILE__).('/widgets/user_recent_images.php'); ?>
 </section>
-<?php include dirname(__FILE__).('/widgets/side_who_to_follow.php'); ?>
 <?php include dirname(__FILE__).('/widgets/side_trending.php'); ?>
 <?php include dirname(__FILE__).('/widgets/side_footer.php'); ?>
 </aside>
