@@ -28,7 +28,7 @@ die();
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Halcyon</title>
+<title>Halcyon @ Urusai! Social</title>
 <link rel="shortcut icon" href="/assets/images/favicon.ico">
 <link rel="stylesheet" href="/login/assets/css/style.css" media="all">
 <link rel="stylesheet" href="/assets/css/fontawesome.min.css" media="all">
@@ -60,22 +60,17 @@ location.href = "/";
 <div id="header_menu_wrap" class="header_box header_left_box">
 <nav class="header_box_child nav_box">
 <ul>
-<a href="https://social.csswg.org/@halcyon" class="no-underline">
-<li>
-<span><i class="fa fa-newspaper-o" aria-hidden="true"></i><?=_('News')?></span>
-</li>
-</a>
-<a href="https://notabug.org/halcyon-suite/halcyon" class="no-underline">
+<a href="https://github.com/neatchee/halcyon" class="no-underline">
 <li>
 <span><i class="fa fa-code" aria-hidden="true"></i><?=_('Source')?></span>
 </li>
 </a>
-<a href="/terms" class="no-underline">
+<a href="https://rules.urusai.social/mastodon-coc.html" class="no-underline">
 <li>
 <span><i class="fa fa-balance-scale" aria-hidden="true"></i><?=_('Terms')?></span>
 </li>
 </a>
-<a href="/privacy" class="no-underline">
+<a href="https://urusai.social/privacy-policy" class="no-underline">
 <li>
 <span><i class="fa fa-shield" aria-hidden="true"></i><?=_('Privacy')?></span>
 </li>
@@ -87,11 +82,6 @@ location.href = "/";
 </li>
 </a>
 <?php } ?>
-<a href="http://www.nikisoft.one/contact.php" class="no-underline">
-<li>
-<span><i class="fa fa-envelope" aria-hidden="true"></i><?=_('Contact')?></span>
-</li>
-</a>
 <a href="#login_form_wrap" class="no-underline">
 <li>
 <span><i class="fa fa-user-circle-o" aria-hidden="true"></i><?=_('Login')?></span>
@@ -106,15 +96,15 @@ location.href = "/";
 <div id="login_form_wrap">
 <div class="login_form">
 <form method="POST" >
-<h2><?=_('Login to Halcyon')?></h2>
+<h2><?=_('Log in to Urusai! Social')?></h2>
 <p>
-<?=_('or')?> <a href="https://instances.social"><?=_('create an account')?></a>
+<?=_('or')?> <a href="https://urusai.social/auth/sign_up"><?=_('create an account')?></a>
 </p>
-<div class="session_aleart">
+<div class="session_alert">
 <span></span>
 </div>
 <div class="login_form_main">
-<input name="acct" type="text" class="login_form_input" placeholder="@johndoe@example.com" required>
+<input name="acct" type="text" class="login_form_input" placeholder="@neatchee@urusai.social" required>
 <label class="login_form_continue pointer">
 <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
 <input id="login_continue" type="submit" value="" class="invisible">
@@ -123,37 +113,27 @@ location.href = "/";
 <div class="login_form_agree">
 <input id="agree" type="checkbox" required checked>
 <label for="agree" class="login_form_agree_check disallow_select pointer">
-<?=_('I agree with the')?> <a href="/terms"><?=_('Terms')?></a>
+<?=_('I agree with the')?> <a href="https://rules.urusai.social/mastodon-coc.html"><?=_('Terms')?></a>
 </label>
 </div>
 </form>
 </div>
 </div>
 <article id="article">
-<h2><?=_('What is Halcyon')?></h2>
-<p>
-<?=_('Halcyon is a webclient for')?><a href="https://joinmastodon.org"> Mastodon </a><?=_('and')?><a href="https://pleroma.social"> Pleroma </a><?=_('which aims to recreate the simple and beautiful user interface of Twitter while keeping all advantages of decentral networks in focus.')?>
-</p>
-<div class="image_wrap">
-<ul>
-<li><img src="/login/assets/images/preview2.png" alt="halcyon_screenshot"></li>
-<li><img src="/login/assets/images/preview1.png" alt="halcyon_screenshot"></li>
-<li><img src="/login/assets/images/preview0.png" alt="halcyon_screenshot"></li>
-</ul>
-<button class="prev_button switch_button"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-<button class="next_button switch_button"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
-</div>
-<h2><?=_('Contact / Feedback')?></h2>
-<p>
-Mastodon: <a href="https://social.csswg.org/@halcyon" target="_blank">@halcyon@social.csswg.org</a><br/>
-Email: <a href="http://www.nikisoft.one/contact.php" target="_blank"><?=_('Use my contact form')?></a><br/>
-Git repository: <a href="https://notabug.org/halcyon-suite/halcyon" target="_blank">halcyon-suite/halcyon</a>
-</p>
-<h2><?=_('Help us')?></h2>
-<p>
-Bitcoin: 1D6GThQqHQYnruKYrKyW9JC86ZGWxjt1hK<br/>
-Liberapay: <a href="https://liberapay.com/nipos">Donate to @nipos</a>
-</p>
+<h1><?= ('This is the alternative UI. Don\'t know what that means? You should probably ')?><a href="https://urusai.social">start here</a></h1>
+<h2><?=_('What is Urusai! Social?')?></h2>
+<p><?=_('We are a community built around our shared love of anime, manga, gaming, and other otaku culture. Urusai is a place where everyone can feel comfortable engaging with others, whether that\'s about their favorite show, book, game, or anything else that excites them, even if it\'s not typical otaku fare!')?></p>
+<p><?= ('This server runs a modified version of the')?><a href="https://github.com/glitch-soc/mastodon"> glitch-soc </a><?=_('version of ')?><a href="https://joinmastodon.org"> Mastodon </a></p>
+<p><?=_('We have a strict')?><a href="https://rules.urusai.social/mastodon-coc.html"> Code of Conduct </a><?= ('that details our strong stance against hate and predatory behavior. In short: zero-tolerance for hatred, bigotry, harassment, science or history denialism, lolicon/paedophilia, exploitation, etc.')?></p>
+<p><?= ('To learn more about our rules, see the')?><a href="https://urusai.social/about"> About </a><?= ('section of the main instance.')?>
+<?= ('To sign up, make sure you read our Code of Conduct and agree to the rules on the About page, then head to the ')?><a href="https://urusai.social/auth/sign_up"> sign-up page</a>.</p>
+<h2><?= ('What is Halcyon?')?></h2>
+<p><?= ('As users have fled "the birdsite" in droves, some have arrived on Mastodon and been confused or frustrated by the differences from what they\'re used to. Halcyon aims to help alleviate that problem by packaging the Mastodon experience into an interface that is familiar for users from the other place. We provide Halcyon as an option for new users to transition slowly into this new federated world of social networking and hope that you\'ll eventually feel brave enough to join us on the')?><a href="https://urusai.social"> main site.</a></p>
+<h2><?=_('Contact')?></h2>
+<p>Local: <a href="https://urusai.social/@neatchee" target="_blank"><?= '@neatchee@urusai.social'?></a><br/>
+Email: <a href="mailto:neatchee@ansemreport.com" target="_blank"><?=_('neatchee@ansemreport.com')?></a><br/>
+Halcyon git repository: <a href="https://github.com/neatchee/halcyon" target="_blank"><?= 'neatchee/halcyon'?></a><br/>
+Mastodon git repository: <a href="https://github.com/neatchee/mastodon" target="_blank"><?= 'neatchee/mastodon'?></a></p>
 </article>
 </main>
 <!-- FOOTER -->
@@ -163,7 +143,6 @@ Liberapay: <a href="https://liberapay.com/nipos">Donate to @nipos</a>
 <i class="fa fa-angle-up" aria-hidden="true"></i>
 </a>
 </div>
-<span>Photo by <a href="https://www.flickr.com/photos/95387826@N08/">Michio Morimoto on Flickr</a> (CC BY 2.0)</span><br/>
 <?php
 if(file_exists("../config/footerlinks.txt")) {
 $footerlinks = json_decode(file_get_contents("../config/footerlinks.txt"));
