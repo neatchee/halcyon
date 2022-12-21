@@ -16,7 +16,6 @@ if(status.media_attachments[i].preview_url != status.media_attachments[i].url) m
 <img src="${status.media_attachments[i].preview_url}" title="${status.media_attachments[i].description}">
 <div class='sensitive_alert'${blurbackground}>
 <span class="text1">${__('Sensitive content')}</span>
-<span class="text2">${status.media_attachments[i].description}</span>
 </div>
 </div>`);
 }
@@ -28,7 +27,6 @@ media_embeds.push(`
 <iframe src="/media/video.php?url=${encodeURIComponent(status.media_attachments[i].url)}&title=${encodeURIComponent(status.media_attachments[i].description)+vidprev}" title="${status.media_attachments[i].description}" frameborder="0" allowfullscreen></iframe>
 <div class='sensitive_alert'${blurbackground}>
 <span class="text1">${__('Sensitive content')}</span>
-<span class="text2">${status.media_attachments[i].description}</span>
 </div>
 </div>`);
 }
@@ -43,7 +41,6 @@ ${vidprev}
 </video>
 <div class='sensitive_alert'${blurbackground}>
 <span class="text1">${__('Sensitive content')}</span>
-<span class="text2">${status.media_attachments[i].description}</span>
 </div>
 </div>`);
 }
@@ -60,7 +57,6 @@ media_embeds.push(`
 <img src="${status.media_attachments[i].url}" title="${status.media_attachments[i].description}" window_view="enable"/>
 <div class='sensitive_alert'${blurbackground}>
 <span class="text1">${__('Sensitive content')}</span>
-<span class="text2">${status.media_attachments[i].description}</span>
 </div>
 </div>`);
 }
